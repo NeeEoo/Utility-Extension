@@ -7,27 +7,41 @@
 <html>
 <head>
 	<link href="css/Style.css" rel="stylesheet" type="text/css">
-	<title>Getting Started Extension's Popup</title><!--
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<title>Utility Extension</title><!--
       - JavaScript and HTML must be in separate files: see our Content Security
       - Policy documentation[1] for details and explanation.
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
 
-	<script src="popup.js"></script>
+	<script src="popup.js">
+	</script>
 </head>
 <body>
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-  <li style="float:right"><a href="#settings">Settings</a></li>
-</ul>
-	<a>Enable&nbsp;SpellCheck</a><br>
-	<a>Enable&nbsp;Button&nbsp;Toggle</a><br>
-	<a>Change&nbsp;Site&nbsp;Color</a><br>
-	<input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:20%;"><br>
+	<ul>
+		<li>
+			<a class="active" href="#home">Home</a>
+		</li>
+		<li>
+			<a href="#news">News</a>
+		</li>
+		<li>
+			<a href="#contact">Contact</a>
+		</li>
+		<li>
+			<a href="#about">About</a>
+		</li>
+		<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+		<li style="float:right">
+			<a href="#settings">Settings</a>
+		</li>
+	</ul>
+	
+	<a>Enable SpellCheck</a><br>
+	<a>Enable Button Toggle</a><br>
+	<a>Change Site Color</a><br>
+	<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:20%;" type="color" value="#ff0000"><br>
 	<a>Enable</a><br>
 	<a>Enable</a><br>
 	<a>Enable</a><br>
