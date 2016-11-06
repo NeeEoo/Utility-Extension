@@ -7,16 +7,17 @@
 <html>
 <head>
 	<link href="css/Style.css" rel="stylesheet" type="text/css">
+	<script src="functions/button1.js"></script>
+	<script src="functions/button2.js"></script>
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<title>Utility Extension</title><!--
+	<title>Utility Extension</title>
+	<!--
       - JavaScript and HTML must be in separate files: see our Content Security
       - Policy documentation[1] for details and explanation.
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-
-	<script src="popup.js">
-	</script>
+	<script src="popup.js"></script>
 </head>
 <body>
 	<ul>
@@ -37,11 +38,10 @@
 			<a href="#settings">Settings</a>
 		</li>
 	</ul>
-	
-	<a>Enable SpellCheck</a><br>
-	<a>Enable Button Toggle</a><br>
+	<a id="button1">Enable SpellCheck</a><br>
+	<a id="button2">Enable Button Toggle</a><br>
 	<a>Change Site Color</a><br>
-	<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:20%;" type="color" value="#ff0000"><br>
+	<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:20%; border-radius:10px;" type="color" value="#ff0000"><br>
 	<a>Enable</a><br>
 	<a>Enable</a><br>
 	<a>Enable</a><br>
