@@ -2,20 +2,6 @@
     "manifest_version": 2,
     "name": "Utility Extension",
     "version": "1.0",
-    "content_scripts": [
-        {
-            "matches": [
-                "http://www.google.com/*"
-            ],
-            "css": [
-                "mystyles.css"
-            ],
-            "js": [
-                "jquery.js",
-                "myscript.js"
-            ]
-        }
-    ],
     "description": "A Utility Extension That help you",
     "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
     "icons": {
@@ -38,6 +24,7 @@
     "permissions": [
         "activeTab",
         "tabs",
+		"contextMenus",
         "https://ajax.googleapis.com/"
     ]
 }

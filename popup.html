@@ -7,17 +7,21 @@
 <html>
 <head>
 	<link href="css/Style.css" rel="stylesheet" type="text/css">
-	<script src="functions/button1.js"></script>
-	<script src="functions/button2.js"></script>
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<title>Utility Extension</title>
-	<!--
+	<script src="functions/button1.js">
+	</script>
+	<script src="functions/button2.js">
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>Utility Extension</title><!--
       - JavaScript and HTML must be in separate files: see our Content Security
       - Policy documentation[1] for details and explanation.
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-	<script src="popup.js"></script>
+
+	<script src="popup.js">
+	</script>
 </head>
 <body>
 	<ul>
@@ -33,18 +37,25 @@
 		<li>
 			<a href="#about">About</a>
 		</li>
-		<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+		<i class="fa fa-cog fa-spin fa-2x fa-fw" style="float:right;"></i>
 		<li style="float:right">
-			<a href="#settings">Settings</a>
+			<a id="optionsButton">Settings</a>
 		</li>
-	</ul>
-	<a id="button1">Enable SpellCheck</a><br>
+	</ul><a id="button1">Enable SpellCheck</a><br>
 	<a id="button2">Enable Button Toggle</a><br>
 	<a>Change Site Color</a><br>
-	<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:20%; border-radius:10px;" type="color" value="#ff0000"><br>
+	<form>
+		<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:20%; border-radius:10px;" type="color" value="#ff0000"><br>
+	</form>
 	<a>Enable</a><br>
 	<a>Enable</a><br>
 	<a>Enable</a><br>
 	<a>Enable</a>
+	<footer>
+		<div id="VisitCount">
+			<script src="js/VisitCount.js">
+			</script> <a id="ResetVisit">Click Me to Reset Value</a>
+		</div>
+	</footer>
 </body>
 </html>
