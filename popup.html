@@ -11,7 +11,16 @@
 	</script>
 	<script src="functions/button2.js">
 	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="functions/button3.js">
+	</script>
+	<script src="functions/button4.js">
+	</script>
+	<script src="functions/button5.js">
+	</script>
+	<script src="functions/button6.js">
+	</script>
+	<script src="lib/jquery-3.1.1.min.js">
+	</script>
 	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<title>Utility Extension</title><!--
       - JavaScript and HTML must be in separate files: see our Content Security
@@ -42,15 +51,18 @@
 			<a id="optionsButton">Settings</a>
 		</li>
 	</ul><a id="button1">Enable SpellCheck</a><br>
-	<a id="button2">Enable Button Toggle</a><br>
-	<a>Change Site Color</a><br>
 	<form>
-		<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:20%; border-radius:10px;" type="color" value="#ff0000"><br>
+		<input><br>
+		<a id="button2">Enable Button Toggle</a><br>
+		<a>Change Site Color</a><br>
 	</form>
-	<a>Enable</a><br>
-	<a>Enable</a><br>
-	<a>Enable</a><br>
-	<a>Enable</a>
+	<form id="SiteColor" name="SiteColor">
+		<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:20%; border-radius:10px;" type="color" value="#ff0000"><br>
+	</form><a id="button3">Enable</a><br>
+	<a id="button4">Enable</a><br>
+	<a id="button5">Enable</a><br>
+	<a id="button6">Enable</a><br>
+	<button id="btnID" disabled>OMG</button>
 	<footer>
 		<div id="VisitCount">
 			<script src="js/VisitCount.js">
