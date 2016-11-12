@@ -21,6 +21,9 @@
         "default_title": "Utility",
         "default_popup": "popup.html"
     },
+	"background": {
+	"scripts": ["content_scripts.js"]
+  },
     "permissions": [
         "activeTab",
         "tabs",

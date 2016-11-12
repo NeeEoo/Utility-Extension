@@ -10,6 +10,14 @@ _gaq.push(['_trackPageview']);
 	s.parentNode.insertBefore(ga, s);
 	//document.getElementById("button1").innerHTML = localStorage.getItem("");
 })();
+ // function trackButton(e) {
+    // _gaq.push(['_trackEvent', e.target.id, 'clicked']);
+  // };
+   // var buttons = document.querySelectorAll('btnID');
+  // for (var i = 0; i < buttons.length; i++) {
+    // buttons[i].addEventListener('click', trackButtonClick);
+  // }
+console.log("Analytics Works")
 // $("#optionsButton").unbind().click(function() {
 // chrome.tabs.getAllInWindow(null, function tabSearch(tabs) {
 // var urlToOpen = chrome.extension.getURL('options_pages/options_page.html');
@@ -28,21 +36,21 @@ _gaq.push(['_trackPageview']);
 // });
 // });
 // });
-chrome.runtime.onMessage.addListener(function(request, sender) {
-	if (request.action == "getSource") {
-		message.innerText = request.source;
-	}
-});
+// chrome.runtime.onMessage.addListener(function(request, sender) {
+	// if (request.action == "getSource") {
+		// message.innerText = request.source;
+	// }
+// });
 
-function onWindowLoad() {
-	var message = document.querySelector('#message');
-	chrome.tabs.executeScript(null, {
-		file: "getPagesSource.js"
-	}, function() {
-		// If you try and inject into an extensions page or the webstore/NTP you'll get an error
-		if (chrome.runtime.lastError) {
-			message.innerText = 'There was an error injecting script : \n' + chrome.runtime.lastError.message;
-		}
-	});
-}
-window.onload = onWindowLoad;
+// function onWindowLoad() {
+	// var message = document.querySelector('#message');
+	// chrome.tabs.executeScript(null, {
+		// file: "getPagesSource.js"
+	// }, function() {
+		////If you try and inject into an extensions page or the webstore/NTP you'll get an error
+		// if (chrome.runtime.lastError) {
+			// message.innerText = 'There was an error injecting script : \n' + chrome.runtime.lastError.message;
+		// }
+	// });
+// }
+// window.onload = onWindowLoad;
