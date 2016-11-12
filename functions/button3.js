@@ -1,18 +1,20 @@
 function button3() {
-	if (document.getElementById("button3").innerHTML == "Enable") {
+	if (document.getElementById("button3").innerHTML == "Show Passwords") {
 		//Button On
-		document.getElementById("button3").innerHTML = "Disable";
+		document.getElementById("button3").innerHTML = "Hide Passwords";
+		//Find All Passwords or type="password" and change to type="pssword" 
 		//Add code here
 	} else {
 		//Button Off
-		document.getElementById("button3").innerHTML = "Enable";
+		document.getElementById("button3").innerHTML = "Show Passwords";
+		//Find All Passwords or type="pssword" and change to type="password"
 		//Add code here
 	}
 }
 document.addEventListener('DOMContentLoaded', function() {
-	var Var1 = document.getElementById('button3');
+	var ShowPass = document.getElementById('button3');
 	// onClick's logic below:
-	Var1.addEventListener('click', function() {
+	ShowPass.addEventListener('click', function() {
 		button3();
 	});
 });

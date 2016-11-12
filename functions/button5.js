@@ -10,9 +10,9 @@ function button5() {
 	}
 }
 document.addEventListener('DOMContentLoaded', function() {
-	var Var3 = document.getElementById('button5');
+	var Var2 = document.getElementById('button5');
 	// onClick's logic below:
-	Var3.addEventListener('click', function() {
+	Var2.addEventListener('click', function() {
 		button5();
 	});
 });

@@ -25,6 +25,7 @@
         "activeTab",
         "tabs",
 		"contextMenus",
+		"<all_urls>",
         "https://ajax.googleapis.com/"
     ]
 }
